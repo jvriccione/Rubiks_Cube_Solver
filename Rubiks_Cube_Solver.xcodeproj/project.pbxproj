@@ -12,9 +12,11 @@
 		303A47A91D9723F80060BCCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 303A47A71D9723F80060BCCC /* Main.storyboard */; };
 		303A47AB1D9723F80060BCCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 303A47AA1D9723F80060BCCC /* Assets.xcassets */; };
 		303A47AE1D9723F80060BCCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 303A47AC1D9723F80060BCCC /* LaunchScreen.storyboard */; };
+		736C69F089308175CEA27C0C /* Pods_Rubiks_Cube_Solver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71FF275513436BADFAFA8B3D /* Pods_Rubiks_Cube_Solver.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12D1F738140280743E93D47C /* Pods-Rubiks_Cube_Solver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rubiks_Cube_Solver.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rubiks_Cube_Solver/Pods-Rubiks_Cube_Solver.release.xcconfig"; sourceTree = "<group>"; };
 		303A47A01D9723F80060BCCC /* Rubiks_Cube_Solver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rubiks_Cube_Solver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		303A47A31D9723F80060BCCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		303A47A51D9723F80060BCCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		303A47AA1D9723F80060BCCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		303A47AD1D9723F80060BCCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		303A47AF1D9723F80060BCCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F63B23026E32F8784710EB2 /* Pods-Rubiks_Cube_Solver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rubiks_Cube_Solver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rubiks_Cube_Solver/Pods-Rubiks_Cube_Solver.debug.xcconfig"; sourceTree = "<group>"; };
+		71FF275513436BADFAFA8B3D /* Pods_Rubiks_Cube_Solver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rubiks_Cube_Solver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				736C69F089308175CEA27C0C /* Pods_Rubiks_Cube_Solver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				303A47A21D9723F80060BCCC /* Rubiks_Cube_Solver */,
 				303A47A11D9723F80060BCCC /* Products */,
+				E3D8A15E708E41394C1E05DB /* Pods */,
+				78098EC681B14C10B8E27E4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = Rubiks_Cube_Solver;
 			sourceTree = "<group>";
 		};
+		78098EC681B14C10B8E27E4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71FF275513436BADFAFA8B3D /* Pods_Rubiks_Cube_Solver.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3D8A15E708E41394C1E05DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F63B23026E32F8784710EB2 /* Pods-Rubiks_Cube_Solver.debug.xcconfig */,
+				12D1F738140280743E93D47C /* Pods-Rubiks_Cube_Solver.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 303A47B21D9723F80060BCCC /* Build configuration list for PBXNativeTarget "Rubiks_Cube_Solver" */;
 			buildPhases = (
+				AB85F2B62E4C09A1BD0D3695 /* [CP] Check Pods Manifest.lock */,
 				303A479C1D9723F80060BCCC /* Sources */,
 				303A479D1D9723F80060BCCC /* Frameworks */,
 				303A479E1D9723F80060BCCC /* Resources */,
+				8CF93B688AD9F3ECE10F1B49 /* [CP] Embed Pods Frameworks */,
+				10AE4E58DB64A68326E41481 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10AE4E58DB64A68326E41481 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rubiks_Cube_Solver/Pods-Rubiks_Cube_Solver-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CF93B688AD9F3ECE10F1B49 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rubiks_Cube_Solver/Pods-Rubiks_Cube_Solver-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB85F2B62E4C09A1BD0D3695 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		303A479C1D9723F80060BCCC /* Sources */ = {
@@ -259,10 +334,12 @@
 		};
 		303A47B31D9723F80060BCCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F63B23026E32F8784710EB2 /* Pods-Rubiks_Cube_Solver.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7HHGDK38HR;
 				INFOPLIST_FILE = Rubiks_Cube_Solver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JVR.Rubiks-Cube-Solver";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,10 +349,12 @@
 		};
 		303A47B41D9723F80060BCCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12D1F738140280743E93D47C /* Pods-Rubiks_Cube_Solver.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7HHGDK38HR;
 				INFOPLIST_FILE = Rubiks_Cube_Solver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JVR.Rubiks-Cube-Solver";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +381,7 @@
 				303A47B41D9723F80060BCCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "303A479F1D9723F80060BCCC"
-               BuildableName = "Rubiks_Cube_Solver.app"
-               BlueprintName = "Rubiks_Cube_Solver"
-               ReferencedContainer = "container:Rubiks_Cube_Solver.xcodeproj">
+               BlueprintIdentifier = "2D0334C54C4E25071704D452C3EDB164"
+               BuildableName = "Pods_Rubiks_Cube_Solver.framework"
+               BlueprintName = "Pods-Rubiks_Cube_Solver"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "303A479F1D9723F80060BCCC"
-            BuildableName = "Rubiks_Cube_Solver.app"
-            BlueprintName = "Rubiks_Cube_Solver"
-            ReferencedContainer = "container:Rubiks_Cube_Solver.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "303A479F1D9723F80060BCCC"
-            BuildableName = "Rubiks_Cube_Solver.app"
-            BlueprintName = "Rubiks_Cube_Solver"
-            ReferencedContainer = "container:Rubiks_Cube_Solver.xcodeproj">
+            BlueprintIdentifier = "2D0334C54C4E25071704D452C3EDB164"
+            BuildableName = "Pods_Rubiks_Cube_Solver.framework"
+            BlueprintName = "Pods-Rubiks_Cube_Solver"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "303A479F1D9723F80060BCCC"
-            BuildableName = "Rubiks_Cube_Solver.app"
-            BlueprintName = "Rubiks_Cube_Solver"
-            ReferencedContainer = "container:Rubiks_Cube_Solver.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
