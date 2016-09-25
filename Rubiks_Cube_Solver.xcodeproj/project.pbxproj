@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		300661921D976C39000ECA01 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300661911D976C39000ECA01 /* Block.swift */; };
 		303A47A41D9723F80060BCCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303A47A31D9723F80060BCCC /* AppDelegate.swift */; };
 		303A47A61D9723F80060BCCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303A47A51D9723F80060BCCC /* ViewController.swift */; };
 		303A47A91D9723F80060BCCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 303A47A71D9723F80060BCCC /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		12D1F738140280743E93D47C /* Pods-Rubiks_Cube_Solver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rubiks_Cube_Solver.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rubiks_Cube_Solver/Pods-Rubiks_Cube_Solver.release.xcconfig"; sourceTree = "<group>"; };
+		300661911D976C39000ECA01 /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 		303A47A01D9723F80060BCCC /* Rubiks_Cube_Solver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rubiks_Cube_Solver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		303A47A31D9723F80060BCCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		303A47A51D9723F80060BCCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				303A47AA1D9723F80060BCCC /* Assets.xcassets */,
 				303A47AC1D9723F80060BCCC /* LaunchScreen.storyboard */,
 				303A47AF1D9723F80060BCCC /* Info.plist */,
+				300661911D976C39000ECA01 /* Block.swift */,
 			);
 			path = Rubiks_Cube_Solver;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				300661921D976C39000ECA01 /* Block.swift in Sources */,
 				303A47A61D9723F80060BCCC /* ViewController.swift in Sources */,
 				303A47A41D9723F80060BCCC /* AppDelegate.swift in Sources */,
 			);
@@ -257,6 +261,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -307,6 +312,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
