@@ -15,13 +15,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var imageView: UIImageView!
     var newMedia: Bool?
     let imagePicker = UIImagePickerController()
-    var colorArr1 : NSMutableArray = []     //what positions are this color
-    var colorArr2 : NSMutableArray = []
-    var colorArr3 : NSMutableArray = []
-    var colorArr4 : NSMutableArray = []
-    var colorArr5 : NSMutableArray = []
-    var colorArr6 : NSMutableArray = []
-    var rgbArr = [[CGFloat]]()
+    var colorArr1 = [[CGFloat]]()     //what positions are this color
+    var colorArr2 = [[CGFloat]]()
+    var colorArr3 = [[CGFloat]]()
+    var colorArr4 = [[CGFloat]]()
+    var colorArr5 = [[CGFloat]]()
+    var colorArr6 = [[CGFloat]]()
+    var blockIndex : CGFloat = 1
+    //var rgbArr = [[CGFloat]]()
+    var posArr : NSMutableArray = []
     var tolerance : CGFloat = 0.15
     
     var isFirstBlock = true
@@ -72,32 +74,39 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 let greenVal = imgColor.cgColor.components![1]
                 let blueVal = imgColor.cgColor.components![2]
                 
-                
-                var minDelta : CGFloat = 1
-                var currentColorIndex : Int?
-                
-                for i in 0...((rgbArr.capacity/3) - 1) {
-                    let currentDelta = abs(redVal - rgbArr[i][0])
-                    if currentDelta < minDelta {
-                        minDelta = currentDelta
-                        currentColorIndex = i
-                    }
-                }
-                
-                rgbArr[currentColorIndex!][0] = (rgbArr[currentColorIndex!][0] + redVal)/2
-                
-                
-                
-                
                 if isFirstBlock {
-                    colorArr1[0] = ct
-                    
-                    rgbArr[0][0] = redVal
-                    rgbArr[0][1] = greenVal
-                    rgbArr[0][2] = blueVal
-                    
+                    appendtocolorArr1(red: redVal, green: greenVal, blue: blueVal)
                     isFirstBlock = false
+                } else {
+                    
                 }
+                
+                
+//                var minDelta : CGFloat = 1
+//                var currentColorIndex : Int?
+//                
+//                for i in 0...((rgbArr.capacity/3) - 1) {
+//                    let currentDelta = abs(redVal - rgbArr[i][0])
+//                    if currentDelta < minDelta {
+//                        minDelta = currentDelta
+//                        currentColorIndex = i
+//                    }
+//                }
+//                
+//                rgbArr[currentColorIndex!][0] = (rgbArr[currentColorIndex!][0] + redVal)/2
+//                
+//                
+//                
+//                
+//                if isFirstBlock {
+//                    colorArr1[0] = ct
+//                    
+//                    rgbArr[0][0] = redVal
+//                    rgbArr[0][1] = greenVal
+//                    rgbArr[0][2] = blueVal
+//                    
+//                    isFirstBlock = false
+//                }
                 
                 
                 
@@ -132,5 +141,21 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let finalImg = UIImage(cgImage: croppedCGImage!)
         
         return finalImg
+    }
+    
+    func appendtocolorArr1(red: CGFloat, green: CGFloat, blue: CGFloat) {
+        
+        var nextAvailableCol = colorArr1.count/4 - 1
+        
+        if nextAvailableCol < 0 {
+            nextAvailableCol = 0
+        }
+        
+        colorArr1[0][nextAvailableCol] = blockIndex
+        colorArr1[1][nextAvailableCol] = red
+        colorArr1[2][nextAvailableCol] = green
+        colorArr1[3][nextAvailableCol] = blue
+        
+        blockIndex += 1
     }
 }
