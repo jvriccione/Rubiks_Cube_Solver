@@ -22,8 +22,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     var colorArr5 = [[CGFloat]]()
     var colorArr6 = [[CGFloat]]()
     var blockIndex : CGFloat = 1
-    var rgbAvg = [[CGFloat]]()
-    //var rgbArr = [[CGFloat]]()
+    var rgbAvg = [[CGFloat]](repeatElement([-1,-1,-1], count: 6))
     var posArr : NSMutableArray = []
     var tolerance : CGFloat = 0.15
     
@@ -87,6 +86,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                     averageRGB()
                     print("LMAO")
 
+                    
                     for i in 0...(rgbAvg.count/3 - 1) {
                         rgbDelta.insert([abs(redVal - rgbAvg[i][0])], at: [i][0])
                         rgbDelta.insert([abs(greenVal - rgbAvg[i][1])], at: [i][1])
@@ -109,43 +109,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                     
                 }
                 
-                
-//                var minDelta : CGFloat = 1
-//                var currentColorIndex : Int?
-//                
-//                for i in 0...((rgbArr.capacity/3) - 1) {
-//                    let currentDelta = abs(redVal - rgbArr[i][0])
-//                    if currentDelta < minDelta {
-//                        minDelta = currentDelta
-//                        currentColorIndex = i
-//                    }
-//                }
-//                
-//                rgbArr[currentColorIndex!][0] = (rgbArr[currentColorIndex!][0] + redVal)/2
-//                
-//                
-//                
-//                
-//                if isFirstBlock {
-//                    colorArr1[0] = ct
-//                    
-//                    rgbArr[0][0] = redVal
-//                    rgbArr[0][1] = greenVal
-//                    rgbArr[0][2] = blueVal
-//                    
-//                    isFirstBlock = false
-//                }
-                
-                
-                
                 ct += 1
             }
         }
-        
-        
-        //imageView.image = image
-        //print(image.size.width)
-        //print(image.size.height)
 
         print(colorArr1)
         print(colorArr2)
@@ -153,8 +119,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         print(colorArr4)
         print(colorArr5)
         print(colorArr6)
-        
-        
 
         self.dismiss(animated: true, completion: nil);
     }
@@ -253,6 +217,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         var gAvg : CGFloat = 0
         var bAvg : CGFloat = 0
         
+        print("colorArr1 is \(colorArr1)")
         if colorArr1.count > 0 {
             for col in 0...(colorArr1.count/4 - 1) {
                 print("colorArr1.count/4 - 1 is equal to \(colorArr1.count/4 - 1)")
@@ -265,6 +230,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             gAvg = gSum / CGFloat(colorArr1.count/4)
             bAvg = bSum / CGFloat(colorArr1.count/4)
             
+            print(rgbAvg.indices)
             rgbAvg.insert([rAvg], at: [0][0])           // ERROR IN THIS LINE..................................
             rgbAvg.insert([gAvg], at: [0][1])
             rgbAvg.insert([bAvg], at: [0][2])
